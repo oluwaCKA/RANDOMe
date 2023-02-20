@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "open sans", serif;
+    background-color: #001233;
+    /* position: absolute; */
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    color: #ff595a;
+    padding-top: 2rem;
+}
+
+.title span {
+    color: #cac0b3;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    border: 1px solid #cac0b3;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+}
+
+p {
+    color: #ff595a;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    border-left: 2px solid #cac0b3;
+    padding-right: 3rem;
+    padding-left: 2rem;
+    height: 20rem; 
+    
+    
+}
+
+.sidebar 
+h2 {
+    color: #ff595a;
+}
+
+button {
+    width: 13rem;
+    max-width: 100%;
+    height: 2rem;
+    padding: 0 2rem;
+    margin-top: 15px;
+    cursor: pointer;
+    background: transparent;
+    color: #ff595a;
+    border: none;
+    border: 1px solid #cac0b3;
+    border-radius: 5px;
+}
+
+.reveal-btn {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #cac0b3;
+}
+
+button:hover {
+    background: #011a48;
+    transform: translateY(-5px);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.content 
+h2 {
+    color:#ff595a;
+}
+
+.content 
+h3 {
+    color: #cac0b3;
+    margin-top: 5px;
+    width: 100%;
+    }
+
+.attribution {
+    color: #cac0b3;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.attribution
+a {
+    text-decoration: none;
+    color: #cac0b3;
+}
+
+.attribution a:hover {
+    color: #ff595a;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        width: 8rem;        
+    }
+
+    .reveal-btn {
+        width: 10em;
+    }
+    .content {
+        margin-top: 3rem;
+        padding-left: 1rem;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    button {
+        width: 10rem;        
+    }
+    .sidebar {
+        padding-left: 1rem;
+    }
+
+    .content {
+        margin-top: -30px;
+        padding-left: 1rem;
+    }
+}
